@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Digite um numero</button>
+
+<script>
+    var numero =Math.round(Math.random*10);
+    var inputa = document.querySelector("input");
+    inputa.focus();
+    
+    function verifica (){
+        if(inputa.value == numero){
+            alert("Acertou");
+        }else{
+            alert("Errouuuu");
+        }
+        inputa.value = "";
+        inputa.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+
+</script>
+
+
